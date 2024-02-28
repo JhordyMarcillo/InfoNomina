@@ -1,0 +1,16 @@
+C:\Users\USER\source\repos\Trabajo DivideVenceras\InfoNomina\InfoNomina\bin\Debug\InfoNomina.exe.config
+C:\Users\USER\source\repos\Trabajo DivideVenceras\InfoNomina\InfoNomina\bin\Debug\InfoNomina.exe
+C:\Users\USER\source\repos\Trabajo DivideVenceras\InfoNomina\InfoNomina\bin\Debug\InfoNomina.pdb
+C:\Users\USER\source\repos\Trabajo DivideVenceras\InfoNomina\InfoNomina\obj\Debug\InfoNomina.csproj.AssemblyReference.cache
+C:\Users\USER\source\repos\Trabajo DivideVenceras\InfoNomina\InfoNomina\obj\Debug\InfoNomina.ActualizacionDatos.resources
+C:\Users\USER\source\repos\Trabajo DivideVenceras\InfoNomina\InfoNomina\obj\Debug\InfoNomina.CalcuSueldo.resources
+C:\Users\USER\source\repos\Trabajo DivideVenceras\InfoNomina\InfoNomina\obj\Debug\InfoNomina.ConsulCargo.resources
+C:\Users\USER\source\repos\Trabajo DivideVenceras\InfoNomina\InfoNomina\obj\Debug\InfoNomina.IngresoDato.resources
+C:\Users\USER\source\repos\Trabajo DivideVenceras\InfoNomina\InfoNomina\obj\Debug\InfoNomina.Inicio.resources
+C:\Users\USER\source\repos\Trabajo DivideVenceras\InfoNomina\InfoNomina\obj\Debug\InfoNomina.Ordenar.resources
+C:\Users\USER\source\repos\Trabajo DivideVenceras\InfoNomina\InfoNomina\obj\Debug\InfoNomina.PresentarInfo.resources
+C:\Users\USER\source\repos\Trabajo DivideVenceras\InfoNomina\InfoNomina\obj\Debug\InfoNomina.Properties.Resources.resources
+C:\Users\USER\source\repos\Trabajo DivideVenceras\InfoNomina\InfoNomina\obj\Debug\InfoNomina.csproj.GenerateResource.cache
+C:\Users\USER\source\repos\Trabajo DivideVenceras\InfoNomina\InfoNomina\obj\Debug\InfoNomina.csproj.CoreCompileInputs.cache
+C:\Users\USER\source\repos\Trabajo DivideVenceras\InfoNomina\InfoNomina\obj\Debug\InfoNomina.exe
+C:\Users\USER\source\repos\Trabajo DivideVenceras\InfoNomina\InfoNomina\obj\Debug\InfoNomina.pdb
