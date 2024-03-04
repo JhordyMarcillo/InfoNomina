@@ -19,7 +19,7 @@ namespace InfoNomina
         private double horasExtras;
         public double salario;
         private double diasExtras;
-        private List<Empleado> empleados = new List<Empleado>();
+        private List<Empleado> listaEmpleados = new List<Empleado>();
 
         public CalcuSueldo()
         {
@@ -59,7 +59,7 @@ namespace InfoNomina
                 salario = (horasTrabajadas + horasExtras) * pagoPorHora * diasTrabajados;
                 txtSueldo.Text = salario.ToString();
                 Empleado empleado = new Empleado(nombre, horasTrabajadas, pagoPorHora, diasTrabajados, horasExtras, salario);
-                empleados.Add(empleado);
+                listaEmpleados.Add(empleado);
 
             }
             catch (FormatException)

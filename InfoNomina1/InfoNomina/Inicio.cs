@@ -19,6 +19,7 @@ namespace InfoNomina
 
         private void Btn_IngresoDatos_Click(object sender, EventArgs e)
         {
+            this.Hide();
             IngresoDato ingreso = new IngresoDato();
             ingreso.Show();
         }
