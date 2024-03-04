@@ -37,9 +37,10 @@
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(79, 437);
+            this.button1.Location = new System.Drawing.Point(53, 284);
+            this.button1.Margin = new System.Windows.Forms.Padding(2);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(102, 36);
+            this.button1.Size = new System.Drawing.Size(68, 23);
             this.button1.TabIndex = 1;
             this.button1.Text = "Mostrar";
             this.button1.UseVisualStyleBackColor = true;
@@ -48,27 +49,31 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(289, 29);
+            this.label1.Location = new System.Drawing.Point(193, 19);
+            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(118, 20);
+            this.label1.Size = new System.Drawing.Size(78, 13);
             this.label1.TabIndex = 2;
             this.label1.Text = "Ordenamientos";
             // 
             // dataGridView1
             // 
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(159, 69);
+            this.dataGridView1.Location = new System.Drawing.Point(77, 45);
+            this.dataGridView1.Margin = new System.Windows.Forms.Padding(2);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowHeadersWidth = 62;
             this.dataGridView1.RowTemplate.Height = 28;
-            this.dataGridView1.Size = new System.Drawing.Size(448, 329);
+            this.dataGridView1.Size = new System.Drawing.Size(385, 214);
             this.dataGridView1.TabIndex = 3;
+            this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
             // 
             // btnOrdenar
             // 
-            this.btnOrdenar.Location = new System.Drawing.Point(503, 437);
+            this.btnOrdenar.Location = new System.Drawing.Point(335, 284);
+            this.btnOrdenar.Margin = new System.Windows.Forms.Padding(2);
             this.btnOrdenar.Name = "btnOrdenar";
-            this.btnOrdenar.Size = new System.Drawing.Size(104, 36);
+            this.btnOrdenar.Size = new System.Drawing.Size(69, 23);
             this.btnOrdenar.TabIndex = 4;
             this.btnOrdenar.Text = "Ordenar";
             this.btnOrdenar.UseVisualStyleBackColor = true;
@@ -76,13 +81,14 @@
             // 
             // Ordenar
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 504);
+            this.ClientSize = new System.Drawing.Size(533, 328);
             this.Controls.Add(this.btnOrdenar);
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.button1);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "Ordenar";
             this.Text = "Ordenar";
             this.Load += new System.EventHandler(this.Ordenar_Load);

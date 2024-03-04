@@ -8,13 +8,14 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using static InfoNomina.IngresoDato;
+using static InfoNomina.CalcuSueldo;
 
 namespace InfoNomina
 {
     public partial class Ordenar : Form
     {
         public static List<string> nombres = new List<string>();
-
+        public static List<bool> pago = new List<bool>();
         public Ordenar()
         {
             InitializeComponent();
@@ -47,15 +48,24 @@ namespace InfoNomina
         private void btnOrdenar_Click(object sender, EventArgs e)
         {
             nombres.Sort();
+            pago.Sort();
             DataTable dataTable = new DataTable();
 
             dataTable.Columns.Add("Apellidos");
+            dataTable.Columns.Add("Pago por Hora");
+            dataTable.Columns.Add("Horas Trabajadas");
 
             foreach (string nombre in nombres)
             {
                 dataTable.Rows.Add(nombre);
             }
             dataGridView1.DataSource = dataTable;
+        }
+       
+
+        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
         }
     }
 }
