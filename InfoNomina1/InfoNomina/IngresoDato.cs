@@ -13,7 +13,7 @@ namespace InfoNomina
 {
     public partial class IngresoDato : Form
     {
-        private List<Empleado> listaEmpleados = new List<Empleado>(); // Declarar una lista para almacenar los empleados
+        private static List<Empleado> listaEmpleados = new List<Empleado>(); // Declarar una lista para almacenar los empleados
 
         public class Empleado
         {
@@ -34,6 +34,18 @@ namespace InfoNomina
             txtCargo.TextChanged += txtCargo_TextChanged;
             txtPago.TextChanged += txtPago_TextChanged;
             txtHoras.TextChanged += txtHoras_TextChanged;
+        }
+        public static Empleado BuscarEmpleadoPorCodigo(string codigo)
+        {
+            // Busca el empleado por su código
+            foreach (Empleado empleado in listaEmpleados)
+            {
+                if (empleado.Codigo == codigo)
+                {
+                    return empleado; // Devuelve el empleado encontrado
+                }
+            }
+            return null; // Si no se encuentra, devuelve null
         }
         private void IngresoDato_Load(object sender, EventArgs e)
         {
@@ -58,7 +70,8 @@ namespace InfoNomina
 
                 // Agregar el empleado a la lista
                 listaEmpleados.Add(empleado);
-
+                string apellidos = txtApellidos.Text;
+                Ordenar.nombres.Add(apellidos);
                 // Limpiar los campos después de guardar
                 LimpiarCampos();
 
@@ -189,6 +202,7 @@ namespace InfoNomina
             this.Hide();
             Inicio inicio = new Inicio();
             inicio.Show();
+
         }
     }
 }

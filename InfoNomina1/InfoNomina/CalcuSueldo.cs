@@ -7,11 +7,15 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using static InfoNomina.IngresoDato;
 
 namespace InfoNomina
 {
     public partial class CalcuSueldo : Form
     {
+        private List<InfoNomina.IngresoDato.Empleado> listaEmpleados;
+        private IngresoDato formularioIngresoDato;
+
         public string nombre;
         private double horasTrabajadas;
         private double pagoPorHora;
@@ -19,8 +23,12 @@ namespace InfoNomina
         private double horasExtras;
         public double salario;
         private double diasExtras;
-        private List<Empleado> listaEmpleados = new List<Empleado>();
 
+        public CalcuSueldo(List<InfoNomina.IngresoDato.Empleado> empleados)
+        {
+            InitializeComponent();
+            listaEmpleados = empleados;
+        }
         public CalcuSueldo()
         {
             InitializeComponent();
@@ -49,22 +57,22 @@ namespace InfoNomina
 
         private void button1_Click(object sender, EventArgs e)
         {
-            try
-            {
-                nombre = txtNombre.Text;
-                horasTrabajadas = double.Parse(txtHoras.Text);
-                pagoPorHora = double.Parse(txtPagohora.Text);
-                diasTrabajados = double.Parse(txtDias.Text);
-                horasExtras = double.Parse(txthorasExtras.Text);
-                salario = (horasTrabajadas + horasExtras) * pagoPorHora * diasTrabajados;
-                txtSueldo.Text = salario.ToString();
-                Empleado empleado = new Empleado(nombre, horasTrabajadas, pagoPorHora, diasTrabajados, horasExtras, salario);
-                listaEmpleados.Add(empleado);
+            string codigoBusqueda = txtCodigo.Text;
 
-            }
-            catch (FormatException)
+            // Llama al método estático directamente, no necesitas una instancia de IngresoDato
+            IngresoDato.Empleado empleadoEncontrado = IngresoDato.BuscarEmpleadoPorCodigo(codigoBusqueda);
+
+            if (empleadoEncontrado != null)
             {
-                MessageBox.Show("Ingrese solo números en los campos de horas trabajadas, pago por hora y días trabajados.");
+                // Llena los campos con los datos del empleado encontrado
+                txtApellido.Text = empleadoEncontrado.Apellidos;
+                txtNombre.Text = empleadoEncontrado.Nombres;
+                txtPagohora.Text = empleadoEncontrado.PagoPorHoras.ToString();
+                txtHoras.Text = empleadoEncontrado.HorasTrabajadas.ToString();
+            }
+            else
+            {
+                MessageBox.Show("No se encontró ningún empleado con el código especificado.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
 
@@ -80,7 +88,9 @@ namespace InfoNomina
 
         private void button1_Click_1(object sender, EventArgs e)
         {
-            this.Close();
+            this.Hide();
+            Inicio inicio = new Inicio();
+            inicio.Show();
         }
 
         private void txtSueldo_TextChanged(object sender, EventArgs e)
@@ -127,6 +137,33 @@ namespace InfoNomina
                 DiasTrabajados = diasTrabajados;
                 HorasExtras = horasExtras;
                 Salario = salario;
+            }
+        }
+
+        private void btnCalcular_Click(object sender, EventArgs e)
+        {
+            string codigoBusqueda = txtCodigo.Text;
+
+            // Buscar el empleado por código
+            IngresoDato.Empleado empleadoEncontrado = IngresoDato.BuscarEmpleadoPorCodigo(codigoBusqueda);
+
+            if (empleadoEncontrado != null)
+            {
+                // Obtener el pago por horas y las horas trabajadas del empleado encontrado
+                double pagoPorHora = empleadoEncontrado.PagoPorHoras;
+                double horasTrabajadas = empleadoEncontrado.HorasTrabajadas;
+                diasTrabajados = double.Parse(txtMes.Text);
+                horasExtras = double.Parse(txthorasExtras.Text);
+
+                // Calcular el salario multiplicando el pago por horas y las horas trabajadas
+                double salario = pagoPorHora * (horasTrabajadas+horasExtras) * diasTrabajados;
+
+                // Mostrar el salario en el campo txtSalario
+                txtSalario.Text = salario.ToString();
+            }
+            else
+            {
+                MessageBox.Show("No se encontró ningún empleado con el código especificado.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
     }
