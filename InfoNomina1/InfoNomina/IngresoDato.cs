@@ -71,7 +71,19 @@ namespace InfoNomina
                 // Agregar el empleado a la lista
                 listaEmpleados.Add(empleado);
                 string apellidos = txtApellidos.Text;
-                Ordenar.nombres.Add(apellidos);
+                string codigo = txtCodigo.Text;
+                string nombres = txtNombre.Text;
+                string cargo = txtCargo.Text;
+                float pagoHoras = float.Parse(txtPago.Text);
+                float horasTraba = float.Parse(txtHoras.Text);
+                Ordenar.nombres.Add(apellidos); 
+                PresentarInfo.apellidos.Add(apellidos);
+                PresentarInfo.codigo.Add(codigo);
+                PresentarInfo.nombres.Add(nombres);
+                PresentarInfo.cargo.Add(cargo);
+                PresentarInfo.pagoPorHoras.Add(pagoHoras);
+                PresentarInfo.horasTrabajadas.Add(horasTraba);
+
                 // Limpiar los campos después de guardar
                 LimpiarCampos();
 
