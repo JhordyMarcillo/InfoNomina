@@ -127,6 +127,8 @@ namespace InfoNomina
                 float salario = (float)(pagoPorHora * (horasTrabajadas + horasExtras) * diasTrabajados);
 
                 txtSalario.Text = salario.ToString();
+
+                Ordenar.sueldos.Add(salario);
             }
             else
             {

@@ -9,16 +9,19 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using static InfoNomina.IngresoDato;
 using static InfoNomina.CalcuSueldo;
+using System.Diagnostics.SymbolStore;
 
 namespace InfoNomina
 {
     public partial class Ordenar : Form
     {
         public static List<string> nombres = new List<string>();
-        public static List<bool> pago = new List<bool>();
+        public static List<double> sueldos = new List<double>();
+         
         public Ordenar()
         {
             InitializeComponent();
+            
         }
 
         private void textBox1_TextChanged(object sender, EventArgs e)
@@ -28,15 +31,26 @@ namespace InfoNomina
 
         private void button1_Click(object sender, EventArgs e)
         {
+            nombres.Sort();
+            sueldos.Sort();
             DataTable dataTable = new DataTable();
 
             dataTable.Columns.Add("Apellidos");
+            dataTable.Columns.Add("Sueldos");
 
-            foreach (string nombre in nombres)
+            if (nombres.Count != sueldos.Count)
             {
-                dataTable.Rows.Add(nombre);
+                MessageBox.Show("La cantidad de nombres no coincide con la cantidad de sueldos.");
+                return;
             }
+
+            for (int i = 0; i < nombres.Count; i++)
+            {
+                dataTable.Rows.Add(nombres[i], sueldos[i]);
+            }
+
             dataGridView1.DataSource = dataTable;
+
 
         }
 
@@ -48,18 +62,25 @@ namespace InfoNomina
         private void btnOrdenar_Click(object sender, EventArgs e)
         {
             nombres.Sort();
-            pago.Sort();
+            sueldos.Sort();
             DataTable dataTable = new DataTable();
 
             dataTable.Columns.Add("Apellidos");
-            dataTable.Columns.Add("Pago por Hora");
-            dataTable.Columns.Add("Horas Trabajadas");
+            dataTable.Columns.Add("Sueldos");
 
-            foreach (string nombre in nombres)
+            if (nombres.Count != sueldos.Count)
             {
-                dataTable.Rows.Add(nombre);
+                MessageBox.Show("La cantidad de nombres no coincide con la cantidad de sueldos.");
+                return;
             }
+
+            for (int i = 0; i < nombres.Count; i++)
+            {
+                dataTable.Rows.Add(nombres[i], sueldos[i]);
+            }
+
             dataGridView1.DataSource = dataTable;
+
         }
 
 
