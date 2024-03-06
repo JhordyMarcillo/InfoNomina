@@ -16,5 +16,10 @@ namespace InfoNomina
         {
             InitializeComponent();
         }
+
+        private void ActualizacionDatos_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

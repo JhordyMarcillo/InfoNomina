@@ -36,15 +36,15 @@
             this.Btn_Ordenar = new System.Windows.Forms.Button();
             this.Btn_PresentarInfo = new System.Windows.Forms.Button();
             this.Btn_Exit = new System.Windows.Forms.Button();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.label1 = new System.Windows.Forms.Label();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // Btn_IngresoDatos
             // 
             this.Btn_IngresoDatos.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.Btn_IngresoDatos.Font = new System.Drawing.Font("MS PMincho", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Btn_IngresoDatos.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Btn_IngresoDatos.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.Btn_IngresoDatos.Location = new System.Drawing.Point(103, 101);
             this.Btn_IngresoDatos.Name = "Btn_IngresoDatos";
@@ -57,7 +57,7 @@
             // Btn_Actualizar
             // 
             this.Btn_Actualizar.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.Btn_Actualizar.Font = new System.Drawing.Font("MS PMincho", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Btn_Actualizar.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Btn_Actualizar.Location = new System.Drawing.Point(103, 234);
             this.Btn_Actualizar.Name = "Btn_Actualizar";
             this.Btn_Actualizar.Size = new System.Drawing.Size(318, 81);
@@ -69,7 +69,7 @@
             // Btn_CalculoSueldo
             // 
             this.Btn_CalculoSueldo.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.Btn_CalculoSueldo.Font = new System.Drawing.Font("MS PMincho", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Btn_CalculoSueldo.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Btn_CalculoSueldo.Location = new System.Drawing.Point(103, 367);
             this.Btn_CalculoSueldo.Name = "Btn_CalculoSueldo";
             this.Btn_CalculoSueldo.Size = new System.Drawing.Size(318, 81);
@@ -81,7 +81,7 @@
             // Btn_ConsultaCargo
             // 
             this.Btn_ConsultaCargo.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.Btn_ConsultaCargo.Font = new System.Drawing.Font("MS PMincho", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Btn_ConsultaCargo.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Btn_ConsultaCargo.Location = new System.Drawing.Point(574, 101);
             this.Btn_ConsultaCargo.Name = "Btn_ConsultaCargo";
             this.Btn_ConsultaCargo.Size = new System.Drawing.Size(318, 81);
@@ -93,7 +93,7 @@
             // Btn_Ordenar
             // 
             this.Btn_Ordenar.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.Btn_Ordenar.Font = new System.Drawing.Font("MS PMincho", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Btn_Ordenar.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Btn_Ordenar.Location = new System.Drawing.Point(574, 234);
             this.Btn_Ordenar.Name = "Btn_Ordenar";
             this.Btn_Ordenar.Size = new System.Drawing.Size(318, 81);
@@ -105,7 +105,7 @@
             // Btn_PresentarInfo
             // 
             this.Btn_PresentarInfo.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.Btn_PresentarInfo.Font = new System.Drawing.Font("MS PMincho", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Btn_PresentarInfo.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Btn_PresentarInfo.Location = new System.Drawing.Point(574, 367);
             this.Btn_PresentarInfo.Name = "Btn_PresentarInfo";
             this.Btn_PresentarInfo.Size = new System.Drawing.Size(318, 81);
@@ -117,7 +117,7 @@
             // Btn_Exit
             // 
             this.Btn_Exit.BackColor = System.Drawing.Color.IndianRed;
-            this.Btn_Exit.Font = new System.Drawing.Font("MS PMincho", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Btn_Exit.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Btn_Exit.Location = new System.Drawing.Point(794, 511);
             this.Btn_Exit.Name = "Btn_Exit";
             this.Btn_Exit.Size = new System.Drawing.Size(192, 50);
@@ -126,28 +126,24 @@
             this.Btn_Exit.UseVisualStyleBackColor = false;
             this.Btn_Exit.Click += new System.EventHandler(this.Btn_Exit_Click);
             // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.pictureBox1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox1.BackgroundImage")));
-            this.pictureBox1.Location = new System.Drawing.Point(178, -33);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(625, 594);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
-            this.pictureBox1.TabIndex = 8;
-            this.pictureBox1.TabStop = false;
-            // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("MS PMincho", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.Location = new System.Drawing.Point(259, 31);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(504, 36);
+            this.label1.Size = new System.Drawing.Size(557, 40);
             this.label1.TabIndex = 9;
             this.label1.Text = "Bienvenido a la empresa SofTech";
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox1.BackgroundImage")));
+            this.pictureBox1.Location = new System.Drawing.Point(103, -5);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(813, 580);
+            this.pictureBox1.TabIndex = 18;
+            this.pictureBox1.TabStop = false;
             // 
             // Inicio
             // 
@@ -179,7 +175,7 @@
         private System.Windows.Forms.Button Btn_Ordenar;
         private System.Windows.Forms.Button Btn_PresentarInfo;
         private System.Windows.Forms.Button Btn_Exit;
-        private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.PictureBox pictureBox1;
     }
 }

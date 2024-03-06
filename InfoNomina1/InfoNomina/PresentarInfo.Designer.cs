@@ -41,10 +41,10 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("MS PMincho", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.Location = new System.Drawing.Point(489, 22);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(217, 24);
+            this.label1.Size = new System.Drawing.Size(246, 29);
             this.label1.TabIndex = 1;
             this.label1.Text = "Presentar Empleados";
             // 
@@ -61,7 +61,7 @@
             // 
             // Btn_Show
             // 
-            this.Btn_Show.Font = new System.Drawing.Font("MS PMincho", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Btn_Show.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Btn_Show.Location = new System.Drawing.Point(34, 559);
             this.Btn_Show.Name = "Btn_Show";
             this.Btn_Show.Size = new System.Drawing.Size(240, 41);
@@ -72,7 +72,7 @@
             // 
             // Btn_Exit
             // 
-            this.Btn_Exit.Font = new System.Drawing.Font("MS PMincho", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Btn_Exit.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Btn_Exit.Location = new System.Drawing.Point(892, 550);
             this.Btn_Exit.Name = "Btn_Exit";
             this.Btn_Exit.Size = new System.Drawing.Size(150, 41);
@@ -84,11 +84,12 @@
             // pictureBox1
             // 
             this.pictureBox1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox1.BackgroundImage")));
-            this.pictureBox1.Location = new System.Drawing.Point(13, 13);
+            this.pictureBox1.Location = new System.Drawing.Point(253, 5);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(1081, 587);
-            this.pictureBox1.TabIndex = 5;
+            this.pictureBox1.Size = new System.Drawing.Size(1043, 595);
+            this.pictureBox1.TabIndex = 18;
             this.pictureBox1.TabStop = false;
+            this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
             // 
             // PresentarInfo
             // 

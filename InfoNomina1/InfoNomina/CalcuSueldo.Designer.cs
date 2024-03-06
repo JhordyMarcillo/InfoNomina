@@ -302,10 +302,10 @@
             // pictureBox1
             // 
             this.pictureBox1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox1.BackgroundImage")));
-            this.pictureBox1.Location = new System.Drawing.Point(101, 18);
+            this.pictureBox1.Location = new System.Drawing.Point(55, 1);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(629, 430);
-            this.pictureBox1.TabIndex = 21;
+            this.pictureBox1.Size = new System.Drawing.Size(758, 503);
+            this.pictureBox1.TabIndex = 19;
             this.pictureBox1.TabStop = false;
             // 
             // CalcuSueldo
@@ -313,13 +313,13 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(872, 516);
+            this.Controls.Add(this.label7);
             this.Controls.Add(this.txtMes);
             this.Controls.Add(this.txthorasExtras);
             this.Controls.Add(this.label9);
             this.Controls.Add(this.label8);
             this.Controls.Add(this.btnCalcular);
             this.Controls.Add(this.txtNombre);
-            this.Controls.Add(this.label7);
             this.Controls.Add(this.btnLimpiar);
             this.Controls.Add(this.btnRegresar);
             this.Controls.Add(this.label6);
