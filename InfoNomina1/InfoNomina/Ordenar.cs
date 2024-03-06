@@ -42,7 +42,7 @@ namespace InfoNomina
 
         private void Ordenar_Load(object sender, EventArgs e)
         {
-            
+
         }
 
         private void btnOrdenar_Click(object sender, EventArgs e)
@@ -61,11 +61,16 @@ namespace InfoNomina
             }
             dataGridView1.DataSource = dataTable;
         }
-       
+
 
         private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
 
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            this.Close();
         }
     }
 }
