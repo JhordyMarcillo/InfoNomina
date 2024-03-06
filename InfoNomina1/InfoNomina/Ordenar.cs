@@ -31,8 +31,6 @@ namespace InfoNomina
 
         private void button1_Click(object sender, EventArgs e)
         {
-            nombres.Sort();
-            sueldos.Sort();
             DataTable dataTable = new DataTable();
 
             dataTable.Columns.Add("Apellidos");
@@ -92,6 +90,52 @@ namespace InfoNomina
         private void button2_Click(object sender, EventArgs e)
         {
             this.Close();
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            nombres.Sort();
+            DataTable dataTable = new DataTable();
+
+            dataTable.Columns.Add("Apellidos");
+            dataTable.Columns.Add("Sueldos");
+
+            if (nombres.Count != sueldos.Count)
+            {
+                MessageBox.Show("La cantidad de nombres no coincide con la cantidad de sueldos.");
+                return;
+            }
+
+            for (int i = 0; i < nombres.Count; i++)
+            {
+                dataTable.Rows.Add(nombres[i], sueldos[i]);
+            }
+
+            dataGridView1.DataSource = dataTable;
+
+        }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            sueldos.Sort();
+            DataTable dataTable = new DataTable();
+
+            dataTable.Columns.Add("Apellidos");
+            dataTable.Columns.Add("Sueldos");
+
+            if (nombres.Count != sueldos.Count)
+            {
+                MessageBox.Show("La cantidad de nombres no coincide con la cantidad de sueldos.");
+                return;
+            }
+
+            for (int i = 0; i < nombres.Count; i++)
+            {
+                dataTable.Rows.Add(nombres[i], sueldos[i]);
+            }
+
+            dataGridView1.DataSource = dataTable;
+
         }
     }
 }
